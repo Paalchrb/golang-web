@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  {{if .}}
+    <h4>fname:</h4>
+    <ul>
+      {{range .fname}}<li>{{.}}</li>{{end}}
+    </ul>
+    <h4>btn-sub:</h4>
+    <ul>
+      {{range .btnsub}}<li>{{.}}</li>{{end}}
+    </ul>
+  {{end}}
+  <form action="/?fname=James" method="POST">
+    <input type="text" name="fname" />
+    <input type="submit" name="btnsub" value="Click here" />
+  </form>
+</body>
+</html>
