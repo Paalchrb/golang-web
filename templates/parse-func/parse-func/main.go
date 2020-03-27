@@ -29,24 +29,24 @@ func firstThree(s string) string {
 	return s
 }
 
-type sage struct{
-	Name string
+type sage struct {
+	Name  string
 	Motto string
 }
 
 func main() {
 	buddha := sage{
-		Name: "Buddha",
+		Name:  "Buddha",
 		Motto: "The belief of no beliefs",
 	}
 
 	gandhi := sage{
-		Name: "Gandhi",
+		Name:  "Gandhi",
 		Motto: "Be the change",
 	}
 
 	mlk := sage{
-		Name: "Martin Luther King",
+		Name:  "Martin Luther King",
 		Motto: "Hatred never ceases with hatred but with love alone is healed",
 	}
 

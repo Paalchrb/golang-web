@@ -2,18 +2,18 @@ package main
 
 import "fmt"
 
-type person struct{
-	fn string
-	ln string
+type person struct {
+	fn  string
+	ln  string
 	age int
 }
 
-type secretAgent struct{
+type secretAgent struct {
 	person
 	ltk bool
 }
 
-type human interface{
+type human interface {
 	speak()
 }
 
@@ -22,7 +22,7 @@ func (sa secretAgent) speak() {
 }
 
 func (p person) speak() {
-	fmt.Println(p.fn, p.ln ,"says hello! My age is ", p.age)
+	fmt.Println(p.fn, p.ln, "says hello! My age is ", p.age)
 }
 
 func communicate(h human) {
@@ -48,7 +48,7 @@ func main() {
 	fmt.Println("#### Person ####")
 	fmt.Println(p1.fn)
 	communicate(p1)
-	
+
 	fmt.Println("#### Secret Agent ####")
 	fmt.Println(sa.ltk)
 	communicate(sa)

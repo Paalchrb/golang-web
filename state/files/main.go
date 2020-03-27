@@ -46,7 +46,6 @@ func foo(w http.ResponseWriter, req *http.Request) {
 
 		s = string(bs)
 
-
 		// write
 		dst, err := os.Create(filepath.Join("./user/", h.Filename))
 		if err != nil {
@@ -54,7 +53,6 @@ func foo(w http.ResponseWriter, req *http.Request) {
 			return
 		}
 		defer dst.Close()
-
 
 		_, err = dst.Write(bs)
 		if err != nil {

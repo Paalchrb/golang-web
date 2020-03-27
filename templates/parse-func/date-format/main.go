@@ -1,11 +1,12 @@
 package main
 
 import (
-	"text/template"
-	"time"
 	"log"
 	"os"
+	"text/template"
+	"time"
 )
+
 var tpl *template.Template
 
 func init() {
@@ -26,4 +27,3 @@ func main() {
 		log.Fatalln(err)
 	}
 }
-

@@ -8,7 +8,6 @@ import (
 	"net"
 )
 
-
 func main() {
 	li, err := net.Listen("tcp", ":8080")
 	if err != nil {
@@ -29,7 +28,7 @@ func main() {
 			fmt.Println(ln)
 		}
 		defer conn.Close()
-		
+
 		// we never get here
 		// we have an open stream connection
 		// how does the above reader know when it's done?

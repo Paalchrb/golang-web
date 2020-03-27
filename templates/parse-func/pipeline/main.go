@@ -26,8 +26,8 @@ func sqRoot(x float64) float64 {
 }
 
 var fm = template.FuncMap{
-	"fdbl": double,
-	"fsq": square,
+	"fdbl":  double,
+	"fsq":   square,
 	"fsqrt": sqRoot,
 }
 
@@ -37,4 +37,3 @@ func main() {
 		log.Fatalln(err)
 	}
 }
-

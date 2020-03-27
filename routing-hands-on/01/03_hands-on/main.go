@@ -12,21 +12,21 @@ func init() {
 	tmp = template.Must(template.ParseGlob("*.gohtml"))
 }
 
-func home (w http.ResponseWriter, req *http.Request) {
+func home(w http.ResponseWriter, req *http.Request) {
 	err := tmp.ExecuteTemplate(w, "home.gohtml", nil)
 	if err != nil {
 		log.Fatalln("error executing template", err)
 	}
 }
 
-func dog (w http.ResponseWriter, req *http.Request) {
+func dog(w http.ResponseWriter, req *http.Request) {
 	err := tmp.ExecuteTemplate(w, "dog.gohtml", nil)
 	if err != nil {
 		log.Fatalln("error executing template", err)
 	}
 }
 
-func me (w http.ResponseWriter, req *http.Request) {
+func me(w http.ResponseWriter, req *http.Request) {
 	err := tmp.ExecuteTemplate(w, "me.gohtml", "Paal")
 	if err != nil {
 		log.Fatalln("error executing template", err)

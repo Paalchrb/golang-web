@@ -18,7 +18,7 @@ func count(w http.ResponseWriter, req *http.Request) {
 
 	if err == http.ErrNoCookie {
 		cookie = &http.Cookie{
-			Name: "my-cookie",
+			Name:  "my-cookie",
 			Value: "0",
 		}
 	}
@@ -32,6 +32,5 @@ func count(w http.ResponseWriter, req *http.Request) {
 
 	http.SetCookie(w, cookie)
 
-
-	fmt.Fprintln(w, "You have visited the current page:", cookie.Value , "times.")
+	fmt.Fprintln(w, "You have visited the current page:", cookie.Value, "times.")
 }

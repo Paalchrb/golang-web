@@ -8,7 +8,6 @@ import (
 	"net"
 )
 
-
 func main() {
 	li, err := net.Listen("tcp", ":8080")
 	if err != nil {
@@ -32,11 +31,11 @@ func main() {
 				break
 			}
 			fmt.Println(ln)
-			
+
 		}
 		fmt.Println("Code got here?")
 		io.WriteString(conn, "I see you connected\n")
-		
+
 		conn.Close()
 	}
 }

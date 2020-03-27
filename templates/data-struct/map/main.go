@@ -14,11 +14,11 @@ func init() {
 
 func main() {
 	sages := map[string]string{
-		"India": "Gandhi",
-		"America": "MLK",
+		"India":    "Gandhi",
+		"America":  "MLK",
 		"Meditate": "Buddha",
-		"Love": "Jesus",
-		"Prophet": "Muhammad",
+		"Love":     "Jesus",
+		"Prophet":  "Muhammad",
 	}
 
 	err := tpl.ExecuteTemplate(os.Stdout, "tpl.gohtml", sages)

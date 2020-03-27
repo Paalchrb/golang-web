@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-type person struct{
-	fName string
-	lName string
+type person struct {
+	fName   string
+	lName   string
 	favFood []string
 }
 

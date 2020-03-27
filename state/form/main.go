@@ -12,9 +12,9 @@ func init() {
 	tpl = template.Must(template.ParseGlob("*.gohtml"))
 }
 
-type person struct{
-	FirstName string
-	LastName string
+type person struct {
+	FirstName  string
+	LastName   string
 	Subscribed bool
 }
 

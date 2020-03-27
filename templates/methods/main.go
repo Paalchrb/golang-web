@@ -8,20 +8,20 @@ import (
 
 var tpl *template.Template
 
-type person struct{
+type person struct {
 	Name string
-	Age int
+	Age  int
 }
 
-func (p person) SomeProcessing () int {
+func (p person) SomeProcessing() int {
 	return 7
 }
 
-func (p person) AgeDbl () int {
+func (p person) AgeDbl() int {
 	return p.Age * 2
 }
 
-func (p person) TakesArg (x int) int {
+func (p person) TakesArg(x int) int {
 	return x * 2
 }
 

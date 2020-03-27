@@ -26,7 +26,7 @@ func main() {
 }
 
 func handle(conn net.Conn) {
-	err := conn.SetDeadline(time.Now().Add(10* time.Second))
+	err := conn.SetDeadline(time.Now().Add(10 * time.Second))
 	if err != nil {
 		log.Println("CONN TIMEOUT")
 	}

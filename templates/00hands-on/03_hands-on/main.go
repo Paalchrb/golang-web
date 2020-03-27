@@ -12,14 +12,14 @@ func init() {
 	tpl = template.Must(template.ParseGlob("tpl.gohtml"))
 }
 
-type hotel struct{
-	Name string
+type hotel struct {
+	Name    string
 	Address string
-	City string
-	Zip string
+	City    string
+	Zip     string
 }
 
-type region struct{
+type region struct {
 	Region string
 	Hotels []hotel
 }

@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	li, err  := net.Listen("tcp", ":8080")
+	li, err := net.Listen("tcp", ":8080")
 	if err != nil {
 		log.Panic(err)
 	}
@@ -16,7 +16,7 @@ func main() {
 	defer li.Close()
 
 	for {
-		conn, err :=  li.Accept()
+		conn, err := li.Accept()
 		if err != nil {
 			log.Println(err)
 		}

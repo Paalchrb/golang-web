@@ -5,11 +5,11 @@ import (
 	"math"
 )
 
-type square struct{
+type square struct {
 	side float64
 }
 
-type circle struct{
+type circle struct {
 	radius float64
 }
 
@@ -21,7 +21,7 @@ func (c circle) area() float64 {
 	return math.Pi * c.radius * c.radius
 }
 
-type shape interface{
+type shape interface {
 	area() float64
 }
 
@@ -30,9 +30,9 @@ func info(s shape) {
 }
 
 func main() {
-	circ := circle{ 3.1 }
+	circ := circle{3.1}
 
-	sq := square{ 5 }
+	sq := square{5}
 
 	fmt.Println("Circle area")
 	info(circ)

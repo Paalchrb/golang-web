@@ -12,19 +12,19 @@ func init() {
 	tpl = template.Must(template.ParseGlob("tpl.gohtml"))
 }
 
-type item struct{
-	Name string
+type item struct {
+	Name  string
 	Price float64
 }
 
-type meal struct{
-	Meal string
+type meal struct {
+	Meal  string
 	Items []item
 }
 
 type menu []meal
 
-type restaurant struct{
+type restaurant struct {
 	Name string
 	Menu menu
 }

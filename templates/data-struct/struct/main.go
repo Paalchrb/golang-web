@@ -8,8 +8,8 @@ import (
 
 var tpl *template.Template
 
-type sage struct{
-	Name string
+type sage struct {
+	Name  string
 	Motto string
 }
 
@@ -19,7 +19,7 @@ func init() {
 
 func main() {
 	buddha := sage{
-		Name: "Buddha",
+		Name:  "Buddha",
 		Motto: "The belief of no beliefs",
 	}
 

@@ -13,7 +13,7 @@ func main() {
 
 func foo(w http.ResponseWriter, req *http.Request) {
 	v := req.FormValue("q")
-	io.WriteString(w, "Do my search: " + v)
+	io.WriteString(w, "Do my search: "+v)
 }
 
 //visit this page:

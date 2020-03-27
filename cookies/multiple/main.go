@@ -16,9 +16,9 @@ func main() {
 
 func set(w http.ResponseWriter, req *http.Request) {
 	http.SetCookie(w, &http.Cookie{
-		Name: "my-cookie",
+		Name:  "my-cookie",
 		Value: "abcd1234",
-		Path: "/",
+		Path:  "/",
 	})
 
 	fmt.Fprintln(w, "COOKIE WRITTEN - CHECK YOUR BROWSER")
@@ -62,4 +62,3 @@ func abundance(w http.ResponseWriter, req *http.Request) {
 	fmt.Fprintln(w, "COOKIES WRITTEN - CHECK YOUR BROWSER")
 	fmt.Fprintln(w, "in chrome go to: dev tools / application / cookies")
 }
-

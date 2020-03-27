@@ -12,8 +12,7 @@ func init() {
 	tpl = template.Must(template.ParseGlob("templates/*"))
 }
 
-
-func main() {	
+func main() {
 	http.HandleFunc("/", foo)
 	http.HandleFunc("/bar", bar)
 	http.HandleFunc("/barred", barred)

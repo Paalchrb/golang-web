@@ -24,7 +24,6 @@ func main() {
 	}
 }
 
-
 func handle(conn net.Conn) {
 	scanner := bufio.NewScanner(conn)
 	for scanner.Scan() {

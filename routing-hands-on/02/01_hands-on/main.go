@@ -12,8 +12,6 @@ func respond(conn net.Conn) {
 	io.WriteString(conn, "I see you connected\n")
 }
 
-
-
 func main() {
 	li, err := net.Listen("tcp", ":8080")
 	if err != nil {

@@ -20,7 +20,7 @@ func index(w http.ResponseWriter, req *http.Request) {
 
 func set(w http.ResponseWriter, req *http.Request) {
 	http.SetCookie(w, &http.Cookie{
-		Name: "my-cookie",
+		Name:  "my-cookie",
 		Value: "This is a test cookie",
 	})
 

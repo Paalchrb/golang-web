@@ -8,19 +8,19 @@ import (
 
 var tpl *template.Template
 
-type sage struct{
-	Name string
+type sage struct {
+	Name  string
 	Motto string
 }
 
-type car struct{
+type car struct {
 	Manufacturer string
-	Model string
-	Doors int
+	Model        string
+	Doors        int
 }
 
-type items struct{
-	Wisdom []sage
+type items struct {
+	Wisdom    []sage
 	Transport []car
 }
 
@@ -30,37 +30,37 @@ func init() {
 
 func main() {
 	buddha := sage{
-		Name: "Buddha",
+		Name:  "Buddha",
 		Motto: "The belief of no beliefs",
 	}
 
 	gandhi := sage{
-		Name: "Gandhi",
+		Name:  "Gandhi",
 		Motto: "Be the change",
 	}
 
 	mlk := sage{
-		Name: "Martin Luther King",
+		Name:  "Martin Luther King",
 		Motto: "Hatred never ceases with hatred but with love alone is healed",
 	}
 
 	f := car{
 		Manufacturer: "Ford",
-		Model: "F150",
-		Doors: 2,
+		Model:        "F150",
+		Doors:        2,
 	}
-	
+
 	c := car{
 		Manufacturer: "Toyota",
-		Model: "Corolla",
-		Doors: 4,
+		Model:        "Corolla",
+		Doors:        4,
 	}
-	
+
 	sages := []sage{buddha, gandhi, mlk}
 	cars := []car{f, c}
 
 	data := items{
-		Wisdom: sages,
+		Wisdom:    sages,
 		Transport: cars,
 	}
 

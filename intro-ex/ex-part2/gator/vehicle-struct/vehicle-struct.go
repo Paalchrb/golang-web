@@ -17,7 +17,7 @@ type sedan struct {
 	luxury bool
 }
 
-type transportation interface{
+type transportation interface {
 	transportationDevice() string
 }
 
@@ -29,7 +29,7 @@ func (t truck) transportationDevice() string {
 	return fmt.Sprintln("The truck has", t.doors, "doors and can transport packages.")
 }
 
-func report (t transportation) {
+func report(t transportation) {
 	fmt.Println(t.transportationDevice())
 }
 
@@ -45,7 +45,7 @@ func main() {
 	fmt.Println(t1.color)
 	fmt.Println(t1.transportationDevice())
 	report(t1)
-	
+
 	s1 := sedan{
 		vehicle{
 			4,
@@ -57,6 +57,5 @@ func main() {
 	fmt.Println(s1.luxury)
 	fmt.Println(s1.transportationDevice())
 	report(s1)
-
 
 }
